@@ -32,3 +32,12 @@ RE_ALL_CONSONANTS = r'[^aeiou]'
 
 SUFFIXES_FIELDS = ['SuffixOther', 'SuffixGenerational', 'PrefixMarital', 'PrefixOther']
 SUFFIXES_THRESH = 0.01
+
+VALUABLE_LETTER_COMB = ['obe', 'joh', 'jam', 'vid',  'cha', 'ert', 'sti', 'ins',
+                         'van', 'ohn', 'xia', 'jas', 'eph', 'ren', 'hri', 'ack',
+                         'fre', 'jen', 'jos', 'one', 'rob', 'dav', 'eun', 'son',
+                         'pet', 'hns', 'cke', 'mit', 'zha', 'min', 'sch', 'nwo',
+                         'jin', 'lam', 'kev', 'aro', 'uel', 'dan', 'ant', 'mar',
+                         'rry', 'the', 'rti', 'liu', 'ndy', 'ate', 'edw', 'eth',
+                         'ner', 'ary', 'amp', 'smi', 'ens', 'erg', 'dre', 'chr',
+                         'bro']

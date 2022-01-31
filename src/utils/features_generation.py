@@ -37,7 +37,6 @@ def get_most_popular_parts_subsets(df, target, subsets, ending=True, window=2, t
 def save_most_popular_endings(df, target):
     '''Make a list of most popular word endings and save it as .txt.
        The file further will be used for token vectorization.'''
-
     endings = get_most_popular_parts_subsets(df, target, **PARAMS_ENDING_3)
     endings += get_most_popular_parts_subsets(df, target, **PARAMS_ENDING_2)
     endings = [f'{x}\n' for x in set(endings)]

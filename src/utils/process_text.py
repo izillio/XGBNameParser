@@ -1,7 +1,7 @@
 import re
 import numpy as np
 from src.utils.constants import WORD_ENDINGS_PATH, WORD_BEGINNINGS_PATH, UNIQUE_CHAR_PATH, PREFIXES_PATH, \
-    RE_NO_LET, RE_ALL_CONSONANTS
+    RE_NO_LET, RE_ALL_CONSONANTS, VALUABLE_LETTER_COMB
 
 
 def open_feat_list(path):
@@ -58,7 +58,8 @@ def convert_text_to_vector(text):
         *define_word_length(text),
         *find_spec_symbols(text, open_feat_list(UNIQUE_CHAR_PATH)),
         *preprocess_match_vector(text, open_feat_list(PREFIXES_PATH), ending=False),
-        *vowel_ratio(text)
+        *vowel_ratio(text),
+        *find_spec_symbols(text, VALUABLE_LETTER_COMB),
             ]
     return vector
 

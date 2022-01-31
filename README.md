@@ -30,12 +30,14 @@ docker-compose run extractor python ./parse.py --name 'Alexander II "The Great"'
 # Things TODO:
 * Accuracy improving 
 
-So far the accuracy is not perfect 0.91 Most common mistake is Surname/GivenName. 
-This is possibly caused by class disbalance and lack of valuable features for robust segregation of those two classes.
+So far the accuracy is not perfect 0.934 Most common mistake is Surname/GivenName. 
+This is possibly caused by:
+ - Small dataset in which pattern GivenName/Surname is more frequent than other combinations
+ - Class disbalance with higher number of GivenName examples
 
 * Optimization
 
-A feature vector for the input contains 639 features, but ~60% of these are not using for prediction. 
+A feature vector for the input contains 804 features, but ~50% of these are not used for prediction. 
 This issue could be resolved with a feature selection algorithm.
 
 * Hyperparameter tuning
