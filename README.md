@@ -1,4 +1,4 @@
-#XGBoost Name Parser
+# XGBoost Name Parser
 
 XGBoost Name Parser is a research version of name parsing algorithm based on 
 the discriminative classifier approach. It works only with names written in latin alphabet.
@@ -9,7 +9,7 @@ INPUT: Dr. Jack Ali Reisenfeld-Rozumovsky II Jr.
 OUTPUT: [('PrefixOther', 'Dr.'), ('GivenName', 'Jack'), ('MiddleName', 'Ali'), ('Surname', 'Reisenfeld-Rozumovsky'), ('SuffixGenerational', 'II'), ('SuffixGenerational', 'Jr.')]
 ```
 
-####How to run the code:
+#### How to run the code:
 1. Clone the repo.
 2. Build the docker image using docker-compose file
 ```
