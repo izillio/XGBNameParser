@@ -27,12 +27,18 @@ The script for evaluation is in: *./notebooks/evaluation.ipynb*
 docker-compose run extractor python ./parse.py --name 'Alexander II "The Great"'
 ```
 
-# Things TODO
+# Things TODO:
 * Accuracy improving 
 
 So far the accuracy is not perfect 0.91 Most common mistake is Surname/GivenName. 
 This is possibly caused by class disbalance and lack of valuable features for robust segregation of those two classes.
+
 * Optimization
 
 A feature vector for the input contains 639 features, but ~60% of these are not using for prediction. 
 This issue could be resolved with a feature selection algorithm.
+
+* Hyperparameter tuning
+
+An XGB model hyperparameter tuning can be a very time-consuming task, which in the other hand can give an improvement to 
+algorithm performance. This step is skipped so far and to be implemented in th future.
